@@ -1,0 +1,7 @@
+session_id,participant_id,participant_name,total_observations,usable_observations,low_quality_observations,mean_heart_rate,mean_skin_response,mean_temperature,mean_activity_level,heart_rate_vs_baseline,skin_response_vs_baseline,temperature_vs_baseline,classification,classification_reason,recovery_detected
+FIT-2026-001,P001,Amina Noor,6,6,0,68.83,1.19,32.43,0.09,0.83,-0.01,0.03,resting,"mean heart rate 68.8 bpm is +0.8 vs baseline 68, mean activity 0.09",False
+FIT-2026-002,P002,Jonas Berg,6,6,0,102,2.01,33.13,0.49,28,0.56,0.43,moderate activity,"mean heart rate 102.0 bpm is +28.0 vs baseline 74, mean activity 0.49",False
+FIT-2026-003,P003,Maya Chen,6,6,0,132.5,3.24,33.53,0.75,69.5,2.14,1.23,high activity,"mean heart rate 132.5 bpm is +69.5 vs baseline 63, mean activity 0.75",False
+FIT-2026-004,P001,Amina Noor,6,6,0,113.17,2.58,33.28,0.55,45.17,1.38,0.88,recovering,Heart rate fell from 120.3 to 106.0 bpm and activity fell from 0.66 to 0.43 over the second half of the session,True
+FIT-2026-005,P002,Jonas Berg,5,0,5,,,,,,,,insufficient data,only 0 of 5 observations have signal_quality >= 0.5; at least 3 are needed,False
+FIT-2026-101,P001,Amina Noor,1,1,0,72,1.3,32.5,0.1,4,0.1,0.1,insufficient data,only 1 of 1 observations have signal_quality >= 0.5; at least 3 are needed,False
