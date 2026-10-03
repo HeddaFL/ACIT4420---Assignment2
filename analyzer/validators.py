@@ -16,7 +16,6 @@ SESSION_REG_PATTERN = re.compile(r'^FIT-\d{4}-\d{3}$') # the regular expression 
 # The participant ID needs to be a match on the format to the IDs. 
 # Therefore, i need to use regular expression to ensure that the ID match the format of the regular expression.
 
-
 def check_valid_participant_id(value):
     if not PARTICIPANT_REG_PATTERN.fullmatch(value):
         raise InvalidIdentifierError('participant_id', value)
@@ -30,7 +29,6 @@ def check_valid_session_id(value):
 # The file fitness_sessions_invalid.csv has examples of "fast" and "two" with text.
 # The data needs to be numbers, so to ensure that only numbers are valid, we need a function that can 
 # ensure that a InvalidRecordError is raised if the data do not have a number. The function to_int and to_float are made to ensure this. 
-
 
 def to_int(field, raw):
     try:
@@ -52,7 +50,6 @@ def to_float(field, raw):
 
 # I will also make attributes with a fixed range.
 # This is based on having the ranges wide enough to accept valid rows, but still reject impossible rows.  
-
 
 HEART_RATE_RANGE = (35, 205) # BPM, rejects -15 and 999.
 TEMPERATURE_RANGE = (25, 42) # Celsius, plausible skin temperature, will reject 55.0
