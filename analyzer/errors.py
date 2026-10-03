@@ -15,7 +15,7 @@ class InvalidIdentifierError(ValueError):
 class InvalidRecordError(ValueError):
 
     def __init__(self, field, reason):
-        self.field = field # remember 
+        self.field = field # remember which field (column) that failed
         self.reason = reason # remember why it failed
         super().__init__(f'Invalid Record: ({field}:{reason})') 
 
