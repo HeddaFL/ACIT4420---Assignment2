@@ -107,7 +107,6 @@ def load_participants(path, rejected):
 # Now we need to load a session.
 # Using the same logic as with load_participants. 
 
-
 def load_sessions(path, participants, rejected, sessions=None):
 
     path = Path(path)
