@@ -3,7 +3,6 @@ Purpose: write the three output files:
 - analysis_summary.csv
 - analysis_report.txt
 - rejected_records.txt
-
 """
 
 # imports
@@ -43,7 +42,7 @@ def summary_row(result):
     }
 
 
-# create a readable lines for measurements, 
+# create readable lines for measurements, 
 def describe_measurement(label, summary, difference, unit):
     if summary["count"] == 0:
         return f"  {label:<15}: no usable data"
@@ -55,7 +54,7 @@ def describe_measurement(label, summary, difference, unit):
     return line
 
 
-# build the text that is in the report file, with both readable text and data. 
+# build the text that is in analysis_report.txt file, with both readable text and data. 
 def build_report_text(result):
 
     differences = result["baseline_differences"]
