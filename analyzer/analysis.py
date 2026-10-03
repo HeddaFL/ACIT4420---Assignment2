@@ -11,6 +11,8 @@ from .models import MIN_SIGNAL_QUALITY
 
 # Set attributes for the analysis. 
 # The number was chosen by me to ensure that there is enough data to make a classification.
+# Difference from assignment1, is i now have the set attributes here, insted of in the code. 
+
 MIN_USABLE_TO_CLASSIFY = 3      
 MIN_USABLE_FOR_RECOVERY = 4     
 RECOVERY_HR_DROP = 3            
