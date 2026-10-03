@@ -96,7 +96,7 @@ class Participant:
         return (
             self.__participant_id == other.__participant_id)
 
-    # defining __eq__ removes Python's default hash, so it is defined again from the ID.
+    # __hash__ defines a hash value based on the ID.
     def __hash__(self):
         return hash(self.__participant_id)
     
