@@ -19,7 +19,7 @@ The repository has the package "analyzer" that contains the program (pipeline) t
 
 The folder /Assignment_II_Pack contains the data and files provided for the assignment. 
 
-The folder /output contains the generated output from running the program. 
+The folder /output contains the generated output from when i ran the program. 
 
 The files main.py and tests.py are in the root folder. 
 
